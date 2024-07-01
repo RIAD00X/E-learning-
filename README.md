@@ -1,3 +1,3 @@
 # E-learning-
 
-```mvn clean instal```
+```mvn clean install```
