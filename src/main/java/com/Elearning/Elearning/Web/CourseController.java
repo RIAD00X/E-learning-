@@ -27,6 +27,7 @@ public class CourseController {
     @PutMapping
     public Course updateCourse(Course course)
     {
+        course.setSections(courseService.findCourseById(course.getId()).orElseThrow().getSections());
         return courseService.updateCourse(course);
     }
     @DeleteMapping("/{id}")
